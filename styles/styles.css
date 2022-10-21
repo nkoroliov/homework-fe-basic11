@@ -1,0 +1,213 @@
+/* Font Helvetica Neue */
+
+@import url("./font/stylesheet.css");
+
+body{
+    font-family: 'Lato';
+}
+
+input, button{
+    font-family: 'Lato'; 
+}
+
+/* Header */
+
+
+.nav-p{
+    padding: 0.5rem 10rem;
+}
+
+
+.nav-search{
+    width: 13.5rem;
+    height: 1.8125rem;
+    background: #ffffff;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8F8F8F;
+
+}
+
+.search-icon{
+    left: 1.2rem;
+    top: 0.5875rem;
+    height: 12px;
+    width: 12px;
+    margin-right: 0.5rem;
+}
+
+/* =======================Main=============================== */
+
+.follow-btn{
+    width: 97px;
+    height: 29px;
+    background: #4094EF;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.more-btn{
+    width: 33px;
+    height: 29px;
+    background: #4094EF;
+    border-radius: 3px;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.acc-stat{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+}
+
+
+.acc-info-heading{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #262626;
+}
+
+.acc-info-text{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #262626;
+}
+
+.acc-info-link{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px; 
+    color: #133768;
+    text-decoration: none;
+}
+
+.stories-group-name{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #262626;
+    margin-top: 10px;
+}
+
+/* ===========================Switsh photo========================= */
+
+.switch-photo{
+    border-top: 1px solid #DBDBDB;
+    width: 72%;
+    height: 30px;
+}
+
+.switch-photo-items{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    color: #8F8F8F;
+    text-decoration: none;
+}
+
+.switch-photo-icons{
+    height: 11px;
+    width: 11px;
+}
+
+.posts-item:hover{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    color: #262626;
+    transition: all .3s;
+}
+
+.posts-item:before{
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    border-top: 1px solid #262626;
+    margin-top: -17px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.posts-item:hover:before{
+    opacity: 1;
+    z-index: 2;
+    transition: all .3s;
+}
+
+.tagged-item:hover{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    color: #262626;
+    transition: all .3s;
+}
+
+.tagged-item:before{
+    content: "";
+    position: absolute;
+    width: 73px;
+    height: 1px;
+    border-top: 1px solid #262626;
+    margin-top: -17px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.tagged-item:hover:before{
+    opacity: 1;
+    z-index: 2;
+    transition: all .3s;
+}
+
+/* Photo */
+
+.photo-wrapper {
+    width: 59.0625rem;
+}
+
+@media all and (max-width: 902px) {
+    .photo-wrapper {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .acc-info{
+        justify-content: center;
+    }
+
+    .main-photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .nav-search{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .search-icon{
+        display: none;
+    }
+
+}

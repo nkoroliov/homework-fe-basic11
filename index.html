@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Homework#11</title>
+</head>
+<body>
+
+        <!-- Navigation -->
+
+    <header class="header">  
+            <nav class="navbar navbar-expand-lg bg-white d-flex justify-content-around nav-p">
+                <img src="./images/Logo.svg" alt="Instagram logo">
+
+                <form class="d-flex position-relative" role="search">
+                    <img class="position-absolute search-icon" src="./images/search.svg" alt="Search icon">
+                    <input class="form-control text-center nav-search" placeholder="Search">
+                </form>
+
+                <div class="d-flex gap-4">
+                    <a href="#">
+                        <img src="./images/Home.svg" alt="Home icon">
+                    </a>
+                    <a class="position-relative" href="#">
+                        <img src="./images/Messege.svg" alt="Messege icon">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-danger mt-1">5</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/Recommended.svg" alt="Recommended icon">
+                    </a>
+                    <a href="#">
+                        <img src="./images/Like.svg" alt="Like icon">
+                    </a>
+                    <a href="#">
+                        <img src="./images/Photo.svg" alt="Photo icon">
+                    </a>
+                </div>
+            </nav>
+    </header>
+
+    <hr>
+
+    <main class="container mt-4">
+
+        <!-- Acc info -->
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="col-12 offset-md-4 offset-lg-6 col-md-6 main-photo">
+                    <img class="me-5" src="./images/main/Ellipse 36.png" alt="Profile photo">
+                </div>
+            </div>
+            <div class="col-md-8 info-text">
+                <div class="col-12 d-flex align-items-center acc-info">
+                    <h2>name</h2>
+                    <button type="button" class="btn btn-primary follow-btn ms-4">Follow</button>
+                    <button type="button" class="btn btn-primary more-btn ms-2 ">
+                        <img class="mb-2" src="./images/main/Polygon 9.svg" alt="Dropdown icon">
+                    </button>
+                    <div class="d-flex align-items-center gap-1 ms-3">
+                        <a class="text-decoration-none" href="#">
+                        <img src="./images/Ellipse 38.svg" alt="Point">
+                        <img src="./images/Ellipse 38.svg" alt="Point">
+                        <img src="./images/Ellipse 38.svg" alt="Point">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <ul class="d-flex gap-5 ps-0">
+                        <li class="acc-stat">
+                            <strong>79</strong>
+                             &nbsp;posts
+                        </li>
+                        <li class="acc-stat">
+                            <strong>379</strong>
+                            &nbsp;followers
+                        </li>
+                        <li class="acc-stat">
+                            <strong>179</strong>
+                            &nbsp;following
+                        </li>
+                        <div>
+                    </ul>
+                </div>
+                <div class="col-12 d-flex flex-column acc-info mt-4">
+                    <h3 class="acc-info-heading"><strong>Name</strong></h3>
+                    <p class="col-8 acc-info-text mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <a class="acc-info-link" href="#"><strong>bit.ly/35Ce3mX</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stories history -->
+
+        <div class="row mt-5 text-center d-flex stories">
+            <div class="offset-md-2 col-4 col-md-2 col-lg-1">
+                <a class="text-decoration-none" href="#"><img class="mb-2" src="./images/main/Ellipse 42.png" alt="Stories group#1"> <br>
+                    <span class="stories-group-name text-center mt-2">Name</span>
+                </a>
+            </div>
+
+            <div class="col-4 col-lg-1">
+                <a class="text-decoration-none" href="#"><img class="mb-2" src="./images/main/Ellipse 42.png" alt="Stories group#2"> <br>
+                    <span class="stories-group-name text-center mt-2">Name</span>
+                </a>
+            </div>
+
+            <div class="col-4 col-lg-1">
+                <a class="text-decoration-none" href="#"><img class="mb-2" src="./images/main/Ellipse 42.png" alt="Stories group#3"> <br>
+                    <span class="stories-group-name text-center mt-2">Name</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Switch photo -->
+        <div class="row d-flex align-items-center switch-photo mt-5 m-auto">
+            <div class="col-1 offset-md-4 col-md-1 d-flex mt-3">
+                <a class="ms-5 me-4 d-flex switch-photo-items posts-item" href="#">
+                    <img class="switch-photo-icons me-2 m-auto" src="./images/main/Vector (1).svg" alt="">POSTS
+                </a>
+                <a class="ms-4 d-flex switch-photo-items tagged-item" href="#">
+                    <img class="switch-photo-icons me-2 m-auto" src="./images/main/Vector (2).svg" alt="">TAGGED
+                </a>
+            </div>
+        </div>
+
+        <!-- Photos -->
+        <div class="row row-cols-3 m-auto mt-4 text-center photo-wrapper d-flex flex-wrap">
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-lg-4 col-12"> 
+                <img class="mb-3 " src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-lg-4 col-12">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-lg-4 col-12">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-lg-4 col-12">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="mb-3" src="./images/main/Photo.png" alt="Photo">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
